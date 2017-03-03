@@ -1,12 +1,14 @@
 #!/bin/bash
 
+echo "Running script for installing shell tools."
+
 #homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 #git and related tools
 brew install git
 
-echo "Run brew doctor after this and following the steps it suggests?"
+echo "Consider running brew doctor after this and following the steps it suggests."
 
 brew tap git-duet/tap
 brew tap caskroom/cask
