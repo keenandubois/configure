@@ -1,0 +1,36 @@
+[credential]
+	helper = osxkeychain
+
+[push]
+	default = simple
+
+[user]
+	name = Keenan DuBois
+	email = keenan.m.dubois@gmail.com
+
+[alias]
+	st = status
+	di = diff
+	co = checkout
+	br = branch
+	unstage = reset HEAD
+	ta = stash			
+	dc = diff --cached
+	cm = duet-commit -m
+	cv = duet-commit -v
+	ap = add -p
+	ci = duet-commit
+	cp = cherry-pick
+	an = add -N
+	clonehub = "!sh -c 'git clone git@github.com:$1.git' -"
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+
+[core]
+	editor = vim
+
+[duet "env"]
+	git-author-initials = kd
+	git-author-name = Keenan DuBois
+	git-author-email = keenan.m.dubois@gmail.com
